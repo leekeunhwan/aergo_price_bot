@@ -1,7 +1,7 @@
 let stringSimilarity = require('string-similarity');
 let RtmClient = require('slack-client').RtmClient;
 let WebClient = require('slack-client').WebClient;
-let token = 'xoxb-4583913838-601764446438-boyCG7T7UZD89Jz9VbL5tvDt';
+let token = process.env.API_TOKEN;
 
 let web = new WebClient(token);
 let rtm = new RtmClient(token, { logLevel: 'error' });
