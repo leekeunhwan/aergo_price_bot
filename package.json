@@ -1,0 +1,25 @@
+{
+  "name": "mylunchmenurecommend_slack_bot",
+  "version": "1.0.0",
+  "description": "slack bot for lunch menu recommend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot.git"
+  },
+  "author": "moong2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot/issues"
+  },
+  "homepage": "https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "slack-client": "^2.0.6",
+    "string-similarity": "^3.0.0"
+  }
+}

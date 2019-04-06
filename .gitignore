@@ -1,4 +1,5 @@
 ## ignore file
 
+node_modules/
 build/
 *.env
