@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot#readme",
   "dependencies": {
+    "async": "^2.6.2",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
     "dotenv": "^7.0.0",
+    "request": "^2.88.0",
     "slack-client": "^2.0.6",
     "string-similarity": "^3.0.0"
   }
