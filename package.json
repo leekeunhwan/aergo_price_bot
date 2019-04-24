@@ -1,7 +1,7 @@
 {
-  "name": "mylunchmenurecommend_slack_bot",
+  "name": "aergo_price_bot",
   "version": "1.0.0",
-  "description": "slack bot for lunch menu recommend",
+  "description": "slack bot for get aergo price",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot.git"
+    "url": "git+https://github.com/leekeunhwan/aergo_price_bot.git"
   },
   "author": "moong2",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot/issues"
+    "url": "https://github.com/leekeunhwan/aergo_price_bot/issues"
   },
-  "homepage": "https://github.com/leekeunhwan/myLunchMenuRecommend_Slack_Bot#readme",
+  "homepage": "https://github.com/leekeunhwan/aergo_price_bot#readme",
   "dependencies": {
     "async": "^2.6.2",
     "axios": "^0.18.0",
