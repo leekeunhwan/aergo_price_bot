@@ -108,15 +108,12 @@ rtm.on(RTM_EVENTS.MESSAGE, msg => {
     //---------------------
     //  Aergo BTC - Upbit
     //---------------------
-    const coinUpbitBTCExchange = coinBTCExchange[0].list.filter(
+    const coinUpbitBTCExchange = coinKRWExchange[0].list.filter(
       item => item.key === "upbit"
     );
     const upbitAergo = coinUpbitBTCExchange[0];
     const upbitAergoExchangeName = upbitAergo.name;
     const upbitAergoLastPrice = upbitAergo.last_price;
-    const upbitAergoLastPriceKRW =
-      Number(upbitAergoLastPrice) * Number(bitCoinKRW);
-    const upbitAergoLastPriceKRWFloat = upbitAergoLastPriceKRW.toFixed(4);
     const upbitAergoChangePercent = upbitAergo.change_percent;
 
     //---------------------
@@ -136,10 +133,9 @@ rtm.on(RTM_EVENTS.MESSAGE, msg => {
             ? `API를 못받았습니다. 잠시후에 시도해주세요`
             : `${gopaxAergoLastPrice}원`
         }\n업비트 : ${
-          isNaN(upbitAergoLastPriceKRWFloat) ||
-          upbitAergoLastPriceKRWFloat == null
+          isNaN(upbitAergoLastPrice) || upbitAergoLastPrice == null
             ? `API를 못받았습니다. 잠시후에 시도해주세요`
-            : `${upbitAergoLastPriceKRWFloat}원`
+            : `${upbitAergoLastPrice}원`
         }`;
         break;
       case "등락폭":
